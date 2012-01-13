@@ -1205,7 +1205,7 @@ ul.listview li a {
 	width: 18px;
 	height: 18px;
 	background: #666;
-	background: rgba(0,0,0,.4);
+	background: rgba(0,0,0,.3);
 	background-image: url(icons-18-white.png);
 	background-repeat: no-repeat;
 	-moz-border-radius: 9px;
@@ -1244,6 +1244,7 @@ ul.listview li a {
 }
 a.ui-btn-icon-bottom {
 	top: -19px;
+	margin-bottom: -19px;
 }
 li a.ui-btn-icon-bottom, .ui-nav a.ui-btn-icon-bottom, .ui-bar a.ui-btn-icon-bottom {
 	top: auto;

@@ -199,7 +199,7 @@ ul.listview li a{display:block;border:none;border-top:1px solid #CCC;background:
 .ui-btn-group a{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;margin-right:-6px}
 .ui-btn-group a:first-child{-webkit-border-radius:3px 0 0 3px;-moz-border-radius:3px 0 0 3px;border-radius:3px 0 0 3px}
 .ui-btn-group a:last-child{-webkit-border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0;margin-right:0}
-.ui-icon{position:absolute;top:50%;right:5px;margin:-9px 0 0 0;width:18px;height:18px;background:#666;background:rgba(0,0,0,.4);background-image:url(icons-18-white.png);background-repeat:no-repeat;-moz-border-radius:9px;-webkit-border-radius:9px;border-radius:9px}
+.ui-icon{position:absolute;top:50%;right:5px;margin:-9px 0 0 0;width:18px;height:18px;background:#666;background:rgba(0,0,0,.3);background-image:url(icons-18-white.png);background-repeat:no-repeat;-moz-border-radius:9px;-webkit-border-radius:9px;border-radius:9px}
 .ui-icon-alt{background:#fff;background:rgba(255,255,255,.3);background-image:url(icons-18-black.png);background-repeat:no-repeat}
 .ui-btn-icon a,a.ui-btn-icon{padding-right:27px}
 .ui-btn-icon-left a,a.ui-btn-icon-left{padding-left:27px}
@@ -207,7 +207,7 @@ ul.listview li a{display:block;border:none;border-top:1px solid #CCC;background:
 .ui-btn-icon-top a,a.ui-btn-icon-top{text-align:center;padding-top:24px}
 .ui-btn-icon-top .ui-icon{top:6px;left:50%;right:auto;margin:0 0 0 -9px}
 .ui-btn-icon-bottom a,a.ui-btn-icon-bottom{text-align:center;padding-bottom:24px}
-a.ui-btn-icon-bottom{top:-19px}
+a.ui-btn-icon-bottom{top:-19px;margin-bottom:-19px}
 li a.ui-btn-icon-bottom,.ui-nav a.ui-btn-icon-bottom,.ui-bar a.ui-btn-icon-bottom{top:auto}
 .ui-btn-icon-bottom .ui-icon{top:auto;bottom:6px;left:50%;right:auto;margin:0 0 0 -9px}
 .ui-icon-plus{background-position:-0 50%}
