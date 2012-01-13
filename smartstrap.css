@@ -115,9 +115,13 @@ ul {
 }
 ol {
 	list-style: decimal;
+	padding-left: 6px;
 }
 li {
-	line-height: 18px;
+	line-height: 25px;
+}
+ul li {
+	padding-left: 6px;
 }
 ul.unstyled {
 	list-style: none;
@@ -834,6 +838,7 @@ ul.listview {
 	border-bottom: 1px solid #CCC;
 }
 ul.listview li {
+	padding-left: 0;
 }
 ul.listview li a {
 	display: block;
@@ -1228,6 +1233,12 @@ ul.listview li a {
 .ui-btn-icon-bottom, a.ui-btn-icon-bottom {
 	text-align: center;
 	padding-bottom: 24px;
+}
+a.ui-btn-icon-bottom {
+	top: -19px;
+}
+li a.ui-btn-icon-bottom, .ui-nav a.ui-btn-icon-bottom, .ui-bar a.ui-btn-icon-bottom {
+	top: auto;
 }
 .ui-btn-icon-bottom .ui-icon {
 	top: auto;
