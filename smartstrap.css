@@ -28,13 +28,14 @@ textarea{overflow:auto;vertical-align:top;}
 body {
 	background-color: #ffffff;
 	margin: 0;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Hiragino Kaku Gothic Pro","Meiryo","Osaka","MS PGothic","Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 22px;
 	color: #404040;
 }
 p {
+	padding: 0 5px;
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 22px;
@@ -62,7 +63,7 @@ h6 small {
 	color: #bfbfbf;
 }
 h1 {
-	margin-bottom: 18px;
+	margin-bottom: 8px;
 	font-size: 32px;
 	line-height: 38px;
 }
@@ -70,6 +71,7 @@ h1 small {
 	font-size: 20px;
 }
 h2 {
+	margin-bottom: 5px;
 	font-size: 24px;
 	line-height: 36px;
 }
@@ -181,7 +183,6 @@ address {
 }
 code, pre {
 	padding: 0 3px 2px;
-	font-family: Monaco, Andale Mono, Courier New, monospace;
 	font-size: 16px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -239,7 +240,6 @@ label,
 input,
 select,
 textarea {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	line-height: normal;
@@ -309,7 +309,7 @@ input[type=button], input[type=reset], input[type=submit] {
 	background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
 	background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-	padding: 5px 14px 6px;
+	padding: 5px 9px 5px;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 	color: #333;
 	font-size: 16px;
@@ -681,7 +681,6 @@ a.info:hover,
 	color: #ffffff;
 }
 a .close, .alert-message .close {
-	font-family: Arial, sans-serif;
 	line-height: 18px;
 }
 a.danger,
@@ -744,7 +743,7 @@ a {
 	background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
 	background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-	padding: 5px 14px 6px;
+	padding: 5px 9px 5px;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 	color: #333;
 	font-size: 16px;
@@ -835,12 +834,14 @@ a.small {
 ul.listview {
 	list-style: none;
 	margin: 0 0 9px 0;
+	border-bottom: 1px solid #CCC;
 }
 ul.listview li {
 }
 ul.listview li a {
 	display: block;
-	border: 1px solid #CCC;
+	border: none;
+	border-top: 1px solid #CCC;
 	background: #EEE;
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#fdfdfd),to(#eee));
 	background-image: -webkit-linear-gradient(#fdfdfd,#eee);
@@ -856,7 +857,6 @@ ul.listview li a {
 }
 .listview li a:hover, .listview li a:active {
 	text-decoration: none;
-	border: 1px solid #BBB;
 	background: #DADADA;
 	color: #101010;
 	text-shadow: 0 1px 1px #FFF;
@@ -1102,8 +1102,8 @@ ul.listview li a {
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-	color: #FFFFFF;
 	text-shadow: 0 -1px 1px #000000;
+	border-bottom: 1px solid #ccc;
 }
 .ui-bar {
 	position: relative;
@@ -1160,12 +1160,13 @@ ul.listview li a {
 	display: block;
 	float: left;
 	padding: 10px 0;
-	margin: 0 0 0 -1px;
+	margin: -1px 0 0 -1px;
 	font-weight: bold;
 	font-size: 13px;
 	text-align: center;
-	border: 1px solid #111111;
-	border-right: none;
+	border: none;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
@@ -1173,13 +1174,9 @@ ul.listview li a {
 
 /* Grid */
 .ui-grid { overflow: hidden; }
-.ui-block { margin: 0; padding: 0; border: 0; float: left; min-height:1px;}
-.ui-grid-1 .ui-block-1, .ui-nav-1 a { width: 100%; float: none; }
-.ui-grid-2 .ui-block-2, .ui-nav-2 a { width: 50%; }
-.ui-grid-3 .ui-block-3, .ui-nav-3 a { width: 33.333%; }
-.ui-grid-4 .ui-block-4, .ui-nav-4 a { width: 25%; }
-.ui-grid-5 .ui-block-5, .ui-nav-5 a { width: 20%; }
-.ui-grid-2 .ui-block-2,
-.ui-grid-3 .ui-block-3,
-.ui-grid-4 .ui-block-4,
-.ui-grid-5 .ui-block-5 { clear: left; }
+.ui-grid-1, .ui-nav-1 a { width: 100%; float: none; }
+.ui-grid-2, .ui-nav-2 a { width: 50%; }
+.ui-grid-3, .ui-nav-3 a { width: 33.333%; }
+.ui-grid-4, .ui-nav-4 a { width: 25%; }
+.ui-grid-5, .ui-nav-5 a { width: 20%; }
+.ui-nav, .ui-grid-2, .ui-grid-3, .ui-grid-4, .ui-grid-5 { clear: left; }
