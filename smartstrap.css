@@ -732,6 +732,7 @@ a.info, .alert-message.info {
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 a {
+	position: relative;
 	cursor: pointer;
 	display: inline-block;
 	background-color: #e6e6e6;
@@ -1086,6 +1087,15 @@ ul.listview li a {
 
 /* UI parts */
 .ui-bar, .ui-nav {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+.ui-bar {
+	position: relative;
 	overflow: hidden;
 	width: 100%;
 	background-color: #222;
@@ -1098,14 +1108,11 @@ ul.listview li a {
 	background-image: -o-linear-gradient(top, #333333, #222222);
 	background-image: linear-gradient(top, #333333, #222222);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	text-shadow: 0 -1px 1px #000000;
-	border-bottom: 1px solid #ccc;
 }
-.ui-bar {
-	position: relative;
+.ui-nav {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 .ui-bar h1, .ui-bar h5 {
 	text-align: center;
@@ -1179,3 +1186,164 @@ ul.listview li a {
 .ui-grid-4, .ui-nav-4 a { width: 25%; }
 .ui-grid-5, .ui-nav-5 a { width: 20%; }
 .ui-nav, .ui-grid-2, .ui-grid-3, .ui-grid-4, .ui-grid-5 { clear: left; }
+
+/* Icon */
+.ui-icon {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	margin: -9px 0 0 0;
+	width: 18px;
+	height: 18px;
+	background: #666;
+	background: rgba(0,0,0,.4);
+	background-image: url(icons-18-white.png);
+	background-repeat: no-repeat;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
+.ui-icon-alt {
+	background: #fff;
+	background: rgba(255,255,255,.3);
+	background-image: url(icons-18-black.png);
+	background-repeat: no-repeat;
+}
+.ui-btn-icon {
+	padding-right: 27px;
+}
+.ui-btn-icon-left {
+	padding-left: 27px;
+}
+.ui-btn-icon-left .ui-icon {
+	left: 5px;
+	right: auto;
+}
+.ui-btn-icon-top {
+	text-align: center;
+	padding-top: 24px;
+}
+.ui-btn-icon-top .ui-icon {
+	top: 6px;
+	left: 50%;
+	right: auto;
+	margin: 0 0 0 -9px;
+}
+.ui-btn-icon-bottom {
+	text-align: center;
+	padding-bottom: 24px;
+}
+.ui-btn-icon-bottom .ui-icon {
+	top: auto;
+	bottom: 6px;
+	left: 50%;
+	right: auto;
+	margin: 0 0 0 -9px;
+}
+/*
+.ui-btn-icon-top .ui-text, .ui-btn-icon-bottom .ui-text {
+	display: inline-block;
+}
+.ui-btn-icon-top .ui-text {
+	margin-top: 14px;
+}
+.ui-btn-icon-bottom .ui-text {
+	margin-bottom: 14px;
+}
+.ui-btn-icon-top .ui-icon, .ui-btn-icon-bottom .ui-icon {
+	left: 50%;
+	right: auto;
+	margin: 0 0 0 -9px;
+}
+.ui-btn-icon-top .ui-icon {
+	top: 5px;
+}
+.ui-btn-icon-bottom .ui-icon {
+	top: auto;
+	bottom: 5px;
+}
+.ui-btn-icon-left .ui-icon {
+	left: 5px;
+	right: auto;
+}
+.ui-btn-icon-left .ui-text {
+	margin-left: 9px;
+}
+.ui-btn-icon-right .ui-text {
+	margin-right: 9px;
+}
+a.ui-btn-icon-top {
+	padding-bottom: 5px;
+}
+a.ui-btn-icon-bottom {
+	padding-top: 5px;
+}
+*/
+
+.ui-icon-plus {
+	background-position: -0 50%;
+}
+.ui-icon-minus {
+	background-position: -36px 50%;
+}
+.ui-icon-delete {
+	background-position: -72px 50%;
+}
+.ui-icon-arrow-r {
+	background-position: -108px 50%;
+}
+.ui-icon-arrow-l {
+	background-position: -144px 50%;
+}
+.ui-icon-arrow-u {
+	background-position: -180px 50%;
+}
+.ui-icon-arrow-d {
+	background-position: -216px 50%;
+}
+.ui-icon-check {
+	background-position: -252px 50%;
+}
+.ui-icon-gear {
+	background-position: -288px 50%;
+}
+.ui-icon-refresh {
+	background-position: -324px 50%;
+}
+.ui-icon-forward {
+	background-position: -360px 50%;
+}
+.ui-icon-back {
+	background-position: -396px 50%;
+}
+.ui-icon-grid {
+	background-position: -432px 50%;
+}
+.ui-icon-star {
+	background-position: -468px 50%;
+}
+.ui-icon-alert {
+	background-position: -504px 50%;
+}
+.ui-icon-info {
+	background-position: -540px 50%;
+}
+.ui-icon-home {
+	background-position: -576px 50%;
+}
+.ui-icon-search,
+.ui-icon-searchfield:after {
+	background-position: -612px 50%;
+}
+.ui-icon-checkbox-off {
+	background-position: -684px 50%;
+}
+.ui-icon-checkbox-on {
+	background-position: -648px 50%;
+}
+.ui-icon-radio-off {
+	background-position: -756px 50%;
+}
+.ui-icon-radio-on {
+	background-position: -720px 50%;
+}
