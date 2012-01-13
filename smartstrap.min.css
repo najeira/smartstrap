@@ -39,8 +39,9 @@ h6{font-size:16px;color:#bfbfbf;text-transform:uppercase}
 ul,ol{margin:0 0 18px 25px}
 ul ul,ul ol,ol ol,ol ul{margin-bottom:0}
 ul{list-style:disc}
-ol{list-style:decimal}
-li{line-height:18px}
+ol{list-style:decimal;padding-left:6px}
+li{line-height:25px}
+ul li{padding-left:6px}
 ul.unstyled{list-style:none;margin-left:0}
 dl{margin-bottom:18px}
 dl dt,dl dd{line-height:18px}
@@ -146,7 +147,7 @@ a.large{font-size:18px;line-height:normal;padding:9px 14px 9px;-webkit-border-ra
 a.small{font-size:14px}
 :root .alert-message,:root a{border-radius:0 \0}
 ul.listview{list-style:none;margin:0 0 9px 0;border-bottom:1px solid #CCC}
-ul.listview li{}
+ul.listview li{padding-left:0}
 ul.listview li a{display:block;border:none;border-top:1px solid #CCC;background:#EEE;background-image:-webkit-gradient(linear,left top,left bottom,from(#fdfdfd),to(#eee));background-image:-webkit-linear-gradient(#fdfdfd,#eee);background-image:-moz-linear-gradient(#fdfdfd,#eee);background-image:-ms-linear-gradient(#fdfdfd,#eee);background-image:-o-linear-gradient(#fdfdfd,#eee);background-image:linear-gradient(#fdfdfd,#eee);color:#444;text-shadow:0 1px 1px #F6F6F6;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
 .listview li a:hover,.listview li a:active{text-decoration:none;background:#DADADA;color:#101010;text-shadow:0 1px 1px #FFF;background-image:-webkit-gradient(linear,left top,left bottom,from(#ededed),to(#dadada));background-image:-webkit-linear-gradient(#ededed,#dadada);background-image:-moz-linear-gradient(#ededed,#dadada);background-image:-ms-linear-gradient(#ededed,#dadada);background-image:-o-linear-gradient(#ededed,#dadada);background-image:linear-gradient(#ededed,#dadada)}
 .close{float:right;color:#000;font-size:22px;font-weight:bold;line-height:13.5px;text-shadow:0 1px 0 #fff;filter:alpha(opacity=25);-khtml-opacity:.25;-moz-opacity:.25;opacity:.25}
@@ -210,6 +211,8 @@ ul.listview li a{display:block;border:none;border-top:1px solid #CCC;background:
 .ui-btn-icon-top,a.ui-btn-icon-top{text-align:center;padding-top:24px}
 .ui-btn-icon-top .ui-icon{top:6px;left:50%;right:auto;margin:0 0 0 -9px}
 .ui-btn-icon-bottom,a.ui-btn-icon-bottom{text-align:center;padding-bottom:24px}
+a.ui-btn-icon-bottom{top:-19px}
+li a.ui-btn-icon-bottom,.ui-nav a.ui-btn-icon-bottom,.ui-bar a.ui-btn-icon-bottom{top:auto}
 .ui-btn-icon-bottom .ui-icon{top:auto;bottom:6px;left:50%;right:auto;margin:0 0 0 -9px}
 .ui-icon-plus{background-position:-0 50%}
 .ui-icon-minus{background-position:-36px 50%}
