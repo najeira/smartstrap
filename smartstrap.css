@@ -1248,6 +1248,7 @@ a.ui-btn-icon-bottom {
 }
 li a.ui-btn-icon-bottom, .ui-nav a.ui-btn-icon-bottom, .ui-bar a.ui-btn-icon-bottom {
 	top: auto;
+	margin-bottom: auto;
 }
 .ui-btn-icon-bottom .ui-icon {
 	top: auto;
