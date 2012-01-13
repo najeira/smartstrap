@@ -1,0 +1,19 @@
+Smartstrap
+==========
+Copyright 2011 (c) najeira
+Licensed under the Apache License v2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+
+Bootstrap
+=========
+Copyright 2011 Twitter, Inc
+Licensed under the Apache License v2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+
+jQuery Mobile
+=============
+Copyright 2011 (c) jQuery Project
+Dual licensed under the MIT or GPL Version 2 licenses.
+http://jquery.org/license
