@@ -196,21 +196,17 @@ ul.listview li a{display:block;border:none;border-top:1px solid #CCC;background:
 .ui-bar a{position:absolute;top:7px;right:10px;font-size:13px;padding:5px 14px 6px;border-color:#333 #333 #111111;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25)}
 .ui-bar a.left{top:7px;left:10px;right:auto}
 .ui-nav a{display:block;float:left;padding:10px 0;margin:-1px 0 0 -1px;font-weight:bold;font-size:13px;text-align:center;border:none;border-top:1px solid #ccc;border-left:1px solid #ccc;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
-.ui-grid{overflow:hidden}
-.ui-grid-1,.ui-nav-1 a{width:100%;float:none}
-.ui-grid-2,.ui-nav-2 a{width:50%}
-.ui-grid-3,.ui-nav-3 a{width:33.333%}
-.ui-grid-4,.ui-nav-4 a{width:25%}
-.ui-grid-5,.ui-nav-5 a{width:20%}
-.ui-nav,.ui-grid-2,.ui-grid-3,.ui-grid-4,.ui-grid-5{clear:left}
+.ui-btn-group a{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;margin-right:-6px}
+.ui-btn-group a:first-child{-webkit-border-radius:3px 0 0 3px;-moz-border-radius:3px 0 0 3px;border-radius:3px 0 0 3px}
+.ui-btn-group a:last-child{-webkit-border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0;margin-right:0}
 .ui-icon{position:absolute;top:50%;right:5px;margin:-9px 0 0 0;width:18px;height:18px;background:#666;background:rgba(0,0,0,.4);background-image:url(icons-18-white.png);background-repeat:no-repeat;-moz-border-radius:9px;-webkit-border-radius:9px;border-radius:9px}
 .ui-icon-alt{background:#fff;background:rgba(255,255,255,.3);background-image:url(icons-18-black.png);background-repeat:no-repeat}
-.ui-btn-icon{padding-right:27px}
-.ui-btn-icon-left{padding-left:27px}
+.ui-btn-icon a,a.ui-btn-icon{padding-right:27px}
+.ui-btn-icon-left a,a.ui-btn-icon-left{padding-left:27px}
 .ui-btn-icon-left .ui-icon{left:5px;right:auto}
-.ui-btn-icon-top,a.ui-btn-icon-top{text-align:center;padding-top:24px}
+.ui-btn-icon-top a,a.ui-btn-icon-top{text-align:center;padding-top:24px}
 .ui-btn-icon-top .ui-icon{top:6px;left:50%;right:auto;margin:0 0 0 -9px}
-.ui-btn-icon-bottom,a.ui-btn-icon-bottom{text-align:center;padding-bottom:24px}
+.ui-btn-icon-bottom a,a.ui-btn-icon-bottom{text-align:center;padding-bottom:24px}
 a.ui-btn-icon-bottom{top:-19px}
 li a.ui-btn-icon-bottom,.ui-nav a.ui-btn-icon-bottom,.ui-bar a.ui-btn-icon-bottom{top:auto}
 .ui-btn-icon-bottom .ui-icon{top:auto;bottom:6px;left:50%;right:auto;margin:0 0 0 -9px}
@@ -236,3 +232,11 @@ li a.ui-btn-icon-bottom,.ui-nav a.ui-btn-icon-bottom,.ui-bar a.ui-btn-icon-botto
 .ui-icon-checkbox-on{background-position:-648px 50%}
 .ui-icon-radio-off{background-position:-756px 50%}
 .ui-icon-radio-on{background-position:-720px 50%}
+.ui-grid{overflow:hidden}
+.ui-grid-1,.ui-nav-1 a{width:100%;float:none}
+.ui-grid-2,.ui-nav-2 a{width:50%}
+.ui-grid-3,.ui-nav-3 a{width:33.333%}
+.ui-grid-4,.ui-nav-4 a{width:25%}
+.ui-grid-5,.ui-nav-5 a{width:20%}
+.ui-nav,.ui-grid-2,.ui-grid-3,.ui-grid-4,.ui-grid-5{clear:left}
+.ui-nav-1 a,.ui-nav-2 a,.ui-nav-3 a,.ui-nav-4 a,.ui-nav-5 a{padding-left:inherit;padding-right:inherit}
