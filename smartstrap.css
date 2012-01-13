@@ -39,7 +39,7 @@ p {
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 22px;
-	margin-bottom: 10px;
+	margin: 5px 0 10px 0;
 }
 p small {
 	font-size: 14px;
@@ -63,7 +63,6 @@ h6 small {
 	color: #bfbfbf;
 }
 h1 {
-	margin-bottom: 8px;
 	font-size: 32px;
 	line-height: 38px;
 }
@@ -1111,7 +1110,6 @@ ul.listview li a {
 	text-shadow: 0 -1px 1px #000000;
 }
 .ui-nav {
-	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 .ui-bar h1, .ui-bar h5 {
@@ -1219,7 +1217,7 @@ ul.listview li a {
 	left: 5px;
 	right: auto;
 }
-.ui-btn-icon-top {
+.ui-btn-icon-top, a.ui-btn-icon-top {
 	text-align: center;
 	padding-top: 24px;
 }
@@ -1229,7 +1227,7 @@ ul.listview li a {
 	right: auto;
 	margin: 0 0 0 -9px;
 }
-.ui-btn-icon-bottom {
+.ui-btn-icon-bottom, a.ui-btn-icon-bottom {
 	text-align: center;
 	padding-bottom: 24px;
 }
