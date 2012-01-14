@@ -75,7 +75,8 @@
 					<a href="#" class="primary">.primary です</a>
 				</p>
 				<p>
-					<a href="#" class="error">.error or .danger です</a>
+					<a href="#" class="danger">.danger です</a>
+					<a href="#" class="notice">.notice です</a>
 					<a href="#" class="disabled">.disabled です</a>
 				</p>
 			</div>
@@ -319,7 +320,7 @@
 				<p>
 					グリッドでリンクボタンを並べることができます。
 				</p>
-				<div class="nav nav-2">
+				<div class="grid grid-2">
 					<a href="#" class="btn-icon-left">
 						左側にアイコン
 						<span class="icon icon-star"></span>
@@ -329,7 +330,7 @@
 						<span class="icon icon-home"></span>
 					</a>
 				</div>
-				<div class="nav nav-2">
+				<div class="grid grid-2">
 					<a href="#" class="btn-icon-top">
 						上側にアイコン
 						<span class="icon icon-gear"></span>
@@ -360,9 +361,53 @@
 					<li>ラトゥール</li>
 				</ol>
 			</div>
+
+			<h4>alert-message</h4>
+			<div>
+				<p class="alert-message">
+					One-line messages for highlighting the failure, possible failure, 
+					or success of an action. Particularly useful for forms.
+				</p>
+			</div>
+
+			<h4>バー</h4>
+			<div>
+				<div class="bar primary">
+					あああ
+				</div>
+			</div>
+
+			<h4>Form</h4>
+			<div>
+				<form>
+					<fieldset>
+						<label>labelです</label>
+						<input type="text" placeholder="テキスト" />
+					</fieldset>
+					<fieldset>
+						<textarea></textarea>
+					</fieldset>
+					<fieldset>
+						<select>
+							<option>ビール</option>
+							<option>ワイン</option>
+							<option>焼酎</option>
+							<option>日本酒</option>
+						</select>
+					</fieldset>
+					<fieldset class="inputs-list">
+						<label>
+							<input type="checkbox" />
+							これは checkbox です
+						</label>
+					</fieldset>
+					<input type="submit" value="送信" class="primary" />
+					<input type="reset" value="キャンセル" />
+				</form>
+			</div>
 		</div>
 		<div id="footer">
-			<div class="nav nav-4">
+			<div class="grid grid-4 menu">
 				<a href="#">Home</a>
 				<a href="#">Hoge</a>
 				<a href="#">Fuga</a>
