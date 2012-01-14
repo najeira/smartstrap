@@ -1088,7 +1088,7 @@ ul.listview li a {
 }
 
 /* UI parts */
-.ui-bar, .ui-nav {
+.bar, .nav {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
@@ -1096,7 +1096,7 @@ ul.listview li a {
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
-.ui-bar {
+.bar {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
@@ -1112,26 +1112,26 @@ ul.listview li a {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
 	text-shadow: 0 -1px 1px #000000;
 }
-.ui-nav {
+.nav {
 	border-bottom: 1px solid #ccc;
 }
-.ui-bar h1, .ui-bar h5 {
+.bar h1, .bar h5 {
 	text-align: center;
 	color: #FFFFFF;
 	white-space: nowrap;
 	outline: 0 !important;
 	text-overflow: ellipsis;
 }
-.ui-bar h1 {
+.bar h1 {
 	margin: 0 90px;
 	font-size: 16px;
 	line-height: 48px;
 }
-.ui-bar h5 {
+.bar h5 {
 	font-size: 14px;
 	font-weight: normal;
 }
-.ui-bar a, .ui-nav a {
+.bar a, .nav a {
 	color: #FFFFFF;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	background-color: #333333;
@@ -1149,7 +1149,7 @@ ul.listview li a {
 	white-space: nowrap;
 	zoom: 1;
 }
-.ui-bar a {
+.bar a {
 	position: absolute;
 	top: 7px;
 	right: 10px;
@@ -1158,12 +1158,12 @@ ul.listview li a {
 	border-color: #333333 #333333 #111111;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-.ui-bar a.left {
+.bar a.left {
 	top: 7px;
 	left: 10px;
 	right: auto;
 }
-.ui-nav a {
+.nav a {
 	display: block;
 	float: left;
 	padding: 10px 0;
@@ -1178,18 +1178,18 @@ ul.listview li a {
 	-moz-border-radius: 0;
 	border-radius: 0;
 }
-.ui-btn-group a {
+.btn-group a {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
 	margin-right: -6px;
 }
-.ui-btn-group a:first-child {
+.btn-group a:first-child {
 	-webkit-border-radius: 3px 0 0 3px;
 	-moz-border-radius: 3px 0 0 3px;
 	border-radius: 3px 0 0 3px;
 }
-.ui-btn-group a:last-child {
+.btn-group a:last-child {
 	-webkit-border-radius: 0 3px 3px 0;
 	-moz-border-radius: 0 3px 3px 0;
 	border-radius: 0 3px 3px 0;
@@ -1197,7 +1197,7 @@ ul.listview li a {
 }
 
 /* Icon */
-.ui-icon {
+.icon {
 	position: absolute;
 	top: 50%;
 	right: 5px;
@@ -1212,45 +1212,45 @@ ul.listview li a {
 	-webkit-border-radius: 9px;
 	border-radius: 9px;
 }
-.ui-icon-alt {
+.icon-alt {
 	background: #fff;
 	background: rgba(255,255,255,.3);
 	background-image: url(icons-18-black.png);
 	background-repeat: no-repeat;
 }
-.ui-btn-icon a, a.ui-btn-icon {
+.btn-icon a, a.btn-icon {
 	padding-right: 27px;
 }
-.ui-btn-icon-left a, a.ui-btn-icon-left {
+.btn-icon-left a, a.btn-icon-left {
 	padding-left: 27px;
 }
-.ui-btn-icon-left .ui-icon {
+.btn-icon-left .icon {
 	left: 5px;
 	right: auto;
 }
-.ui-btn-icon-top a, a.ui-btn-icon-top {
+.btn-icon-top a, a.btn-icon-top {
 	text-align: center;
 	padding-top: 24px;
 }
-.ui-btn-icon-top .ui-icon {
+.btn-icon-top .icon {
 	top: 6px;
 	left: 50%;
 	right: auto;
 	margin: 0 0 0 -9px;
 }
-.ui-btn-icon-bottom a, a.ui-btn-icon-bottom {
+.btn-icon-bottom a, a.btn-icon-bottom {
 	text-align: center;
 	padding-bottom: 24px;
 }
-a.ui-btn-icon-bottom {
+a.btn-icon-bottom {
 	top: -19px;
 	margin-bottom: -19px;
 }
-li a.ui-btn-icon-bottom, .ui-nav a.ui-btn-icon-bottom, .ui-bar a.ui-btn-icon-bottom {
+li a.btn-icon-bottom, .nav a.btn-icon-bottom, .bar a.btn-icon-bottom {
 	top: auto;
 	margin-bottom: auto;
 }
-.ui-btn-icon-bottom .ui-icon {
+.btn-icon-bottom .icon {
 	top: auto;
 	bottom: 6px;
 	left: 50%;
@@ -1258,84 +1258,84 @@ li a.ui-btn-icon-bottom, .ui-nav a.ui-btn-icon-bottom, .ui-bar a.ui-btn-icon-bot
 	margin: 0 0 0 -9px;
 }
 
-.ui-icon-plus {
+.icon-plus {
 	background-position: -0 50%;
 }
-.ui-icon-minus {
+.icon-minus {
 	background-position: -36px 50%;
 }
-.ui-icon-delete {
+.icon-delete {
 	background-position: -72px 50%;
 }
-.ui-icon-arrow-r {
+.icon-arrow-r {
 	background-position: -108px 50%;
 }
-.ui-icon-arrow-l {
+.icon-arrow-l {
 	background-position: -144px 50%;
 }
-.ui-icon-arrow-u {
+.icon-arrow-u {
 	background-position: -180px 50%;
 }
-.ui-icon-arrow-d {
+.icon-arrow-d {
 	background-position: -216px 50%;
 }
-.ui-icon-check {
+.icon-check {
 	background-position: -252px 50%;
 }
-.ui-icon-gear {
+.icon-gear {
 	background-position: -288px 50%;
 }
-.ui-icon-refresh {
+.icon-refresh {
 	background-position: -324px 50%;
 }
-.ui-icon-forward {
+.icon-forward {
 	background-position: -360px 50%;
 }
-.ui-icon-back {
+.icon-back {
 	background-position: -396px 50%;
 }
-.ui-icon-grid {
+.icon-grid {
 	background-position: -432px 50%;
 }
-.ui-icon-star {
+.icon-star {
 	background-position: -468px 50%;
 }
-.ui-icon-alert {
+.icon-alert {
 	background-position: -504px 50%;
 }
-.ui-icon-info {
+.icon-info {
 	background-position: -540px 50%;
 }
-.ui-icon-home {
+.icon-home {
 	background-position: -576px 50%;
 }
-.ui-icon-search,
-.ui-icon-searchfield:after {
+.icon-search,
+.icon-searchfield:after {
 	background-position: -612px 50%;
 }
-.ui-icon-checkbox-off {
+.icon-checkbox-off {
 	background-position: -684px 50%;
 }
-.ui-icon-checkbox-on {
+.icon-checkbox-on {
 	background-position: -648px 50%;
 }
-.ui-icon-radio-off {
+.icon-radio-off {
 	background-position: -756px 50%;
 }
-.ui-icon-radio-on {
+.icon-radio-on {
 	background-position: -720px 50%;
 }
 
 /* Grid */
-.ui-grid { overflow: hidden; }
-.ui-grid-1, .ui-nav-1 a { width: 100%; float: none; }
-.ui-grid-2, .ui-nav-2 a { width: 50%; }
-.ui-grid-3, .ui-nav-3 a { width: 33.333%; }
-.ui-grid-4, .ui-nav-4 a { width: 25%; }
-.ui-grid-5, .ui-nav-5 a { width: 20%; }
-.ui-nav, .ui-grid-2, .ui-grid-3, .ui-grid-4, .ui-grid-5 { clear: left; }
-.ui-nav-1 a,
-.ui-nav-2 a,
-.ui-nav-3 a,
-.ui-nav-4 a,
-.ui-nav-5 a { padding-left: inherit; padding-right: inherit; }
+.grid { overflow: hidden; }
+.grid-1, .nav-1 a { width: 100%; float: none; }
+.grid-2, .nav-2 a { width: 50%; }
+.grid-3, .nav-3 a { width: 33.333%; }
+.grid-4, .nav-4 a { width: 25%; }
+.grid-5, .nav-5 a { width: 20%; }
+.nav, .grid-2, .grid-3, .grid-4, .grid-5 { clear: left; }
+.nav-1 a,
+.nav-2 a,
+.nav-3 a,
+.nav-4 a,
+.nav-5 a { padding-left: inherit; padding-right: inherit; }

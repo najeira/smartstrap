@@ -15,7 +15,7 @@
 </head>
 <body>
 	<div id="page">
-		<div id="header" class="ui-bar">
+		<div id="header" class="bar">
 			<h1>Smartstrap</h1>
 			<a href="#">Mypage</a>
 		</div>
@@ -40,7 +40,7 @@
 				</p>
 				<p>
 					アイコンを使う場合は、同梱の .png ファイルをCSSと同じディレクトリに置いてください。
-					アイコンを使わない場合 ( ui-icon クラスを使わない場合 ) は、画像ファイルは不要です。
+					アイコンを使わない場合 ( .icon クラスを使わない場合 ) は、画像ファイルは不要です。
 				</p>
 			</div>
 
@@ -61,6 +61,10 @@
 					<a href="#">こんにちは</a>
 					<a href="#">こんばんは</a>
 				</p>
+			</div>
+
+			<h4>ボタンの色</h4>
+			<div>
 				<p>
 					class を使うことで、色を変えることができます。
 					ボタンの意味に応じて使い分けてください。
@@ -74,104 +78,145 @@
 					<a href="#" class="error">.error or .danger です</a>
 					<a href="#" class="disabled">.disabled です</a>
 				</p>
+			</div>
+
+			<h4>ボタンのアイコン</h4>
+			<div>
 				<p>
-					<a href="#" class="ui-btn-icon">
+					ボタンにアイコンを使うこともできます。
+					Aタグに .btn-icon を設定し、Aタグ内にアイコン用のタグを記述します。<br />
+				</p>
+				<p>
+					<code>
+						&lt;a href="..." class="btn-icon"&gt;
+						ボタンのテキスト
+						&lt;span class="icon icon-home"&gt;&lt;/span&gt;
+						&lt;/a&gt;
+					</code>
+				</p>
+				<p>
+					<a href="#" class="btn-icon">
 						こんにちは
-						<span class="ui-icon ui-icon-home"></span>
+						<span class="icon icon-home"></span>
 					</a>
-					<a href="#" class="ui-btn-icon-left">
+				</p>
+			</div>
+
+			<h4>ボタンのアイコンのオプション</h4>
+			<div>
+				<p>
+					アイコン、および位置はクラスによって変更できます。
+					<dl>
+						<dt>.btn-icon</dt>
+						<dd>アイコンを右側に表示します</dd>
+						<dt>.btn-icon-left</dt>
+						<dd>アイコンを左側に表示します</dd>
+						<dt>.btn-icon-top</dt>
+						<dd>アイコンを上側に表示します</dd>
+						<dt>.btn-icon-bottom</dt>
+						<dd>アイコンを下側に表示します</dd>
+					</dl>
+				</p>
+				<p>
+					<a href="#" class="btn-icon-left">
 						こんばんは
-						<span class="ui-icon ui-icon-star"></span>
+						<span class="icon icon-star"></span>
 					</a>
-				</p>
-				<p>
-					<a href="#" class="ui-btn-icon-top success">
+					<a href="#" class="btn-icon-top success">
 						あいうえお
-						<span class="ui-icon ui-icon-gear"></span>
+						<span class="icon icon-gear"></span>
 					</a>
-					<a href="#" class="ui-btn-icon-bottom info">
+					<a href="#" class="btn-icon-bottom info">
 						かきくけこ
-						<span class="ui-icon ui-icon-check"></span>
+						<span class="icon icon-check"></span>
 					</a>
-					<a href="#" class="ui-btn-icon-top primary">
+				</p>
+				<p>
+					<a href="#" class="btn-icon-top primary">
 						さしすせそ
-						<span class="ui-icon ui-icon-gear"></span>
+						<span class="icon icon-gear"></span>
 					</a>
-				</p>
-				<p>
-					<a href="#" class="ui-btn-icon-bottom error">
+					<a href="#" class="btn-icon-bottom error">
 						たちつてと
-						<span class="ui-icon ui-icon-check"></span>
+						<span class="icon icon-check"></span>
 					</a>
-					<a href="#" class="ui-btn-icon-top disabled">
+					<a href="#" class="btn-icon-top disabled">
 						なにぬねの
-						<span class="ui-icon ui-icon-gear"></span>
+						<span class="icon icon-gear"></span>
 					</a>
 				</p>
+			</div>
+
+			<h4>ボタンのグループ化</h4>
+			<div>
 				<p>
-					リンクを .ui-btn-group で囲むと、グループ化することができます。
+					リンクを .btn-group で囲むと、グループ化することができます。
 				</p>
-				<p class="ui-btn-group">
+				<p class="btn-group">
 					<a href="#">ひだり</a>
 					<a href="#">まんなか</a>
 					<a href="#">みぎ</a>
-					グループ
+					.btn-group
 				</p>
-				<p class="ui-btn-group ui-btn-icon">
+				<p class="btn-group btn-icon">
 					<a href="#">
 						ひだり
-						<span class="ui-icon ui-icon-arrow-r"></span>
+						<span class="icon icon-arrow-r"></span>
 					</a>
 					<a href="#">
 						まんなか
-						<span class="ui-icon ui-icon-arrow-r"></span>
+						<span class="icon icon-arrow-r"></span>
 					</a>
 					<a href="#">
 						みぎ
-						<span class="ui-icon ui-icon-arrow-r"></span>
+						<span class="icon icon-arrow-r"></span>
 					</a>
+					.btn-group .btn-icon
 				</p>
-				<p class="ui-btn-group ui-btn-icon-left">
+				<p class="btn-group btn-icon-left">
 					<a href="#">
 						ひだり
-						<span class="ui-icon ui-icon-arrow-l"></span>
+						<span class="icon icon-arrow-l"></span>
 					</a>
 					<a href="#">
 						まんなか
-						<span class="ui-icon ui-icon-arrow-l"></span>
+						<span class="icon icon-arrow-l"></span>
 					</a>
 					<a href="#">
 						みぎ
-						<span class="ui-icon ui-icon-arrow-l"></span>
+						<span class="icon icon-arrow-l"></span>
 					</a>
+					.btn-group .btn-icon-left
 				</p>
-				<p class="ui-btn-group ui-btn-icon-top">
+				<p class="btn-group btn-icon-top">
 					<a href="#">
 						ひだり
-						<span class="ui-icon ui-icon-arrow-u"></span>
+						<span class="icon icon-arrow-u"></span>
 					</a>
 					<a href="#">
 						まんなか
-						<span class="ui-icon ui-icon-arrow-u"></span>
+						<span class="icon icon-arrow-u"></span>
 					</a>
 					<a href="#">
 						みぎ
-						<span class="ui-icon ui-icon-arrow-u"></span>
+						<span class="icon icon-arrow-u"></span>
 					</a>
+					.btn-group .btn-icon-top
 				</p>
-				<p class="ui-btn-group ui-btn-icon-bottom">
+				<p class="btn-group btn-icon-bottom">
 					<a href="#">
 						ひだり
-						<span class="ui-icon ui-icon-arrow-d"></span>
+						<span class="icon icon-arrow-d"></span>
 					</a>
 					<a href="#">
 						まんなか
-						<span class="ui-icon ui-icon-arrow-d"></span>
+						<span class="icon icon-arrow-d"></span>
 					</a>
 					<a href="#">
 						みぎ
-						<span class="ui-icon ui-icon-arrow-d"></span>
+						<span class="icon icon-arrow-d"></span>
 					</a>
+					.btn-group .btn-icon-bottom
 				</p>
 			</div>
 
@@ -199,27 +244,27 @@
 				</p>
 				<ul class="listview">
 					<li>
-						<a href="#" class="ui-btn-icon">
+						<a href="#" class="btn-icon">
 							右側にアイコン
-							<span class="ui-icon ui-icon-home"></span>
+							<span class="icon icon-home"></span>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="ui-btn-icon-left">
+						<a href="#" class="btn-icon-left">
 							左側にアイコン
-							<span class="ui-icon ui-icon-star"></span>
+							<span class="icon icon-star"></span>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="ui-btn-icon-top">
+						<a href="#" class="btn-icon-top">
 							上側にアイコン
-							<span class="ui-icon ui-icon-gear"></span>
+							<span class="icon icon-gear"></span>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="ui-btn-icon-bottom">
+						<a href="#" class="btn-icon-bottom">
 							下側にアイコン
-							<span class="ui-icon ui-icon-check"></span>
+							<span class="icon icon-check"></span>
 						</a>
 					</li>
 				</ul>
@@ -230,24 +275,24 @@
 				<p>
 					グリッドでリンクボタンを並べることができます。
 				</p>
-				<div class="ui-nav ui-nav-2">
-					<a href="#" class="ui-btn-icon-left">
+				<div class="nav nav-2">
+					<a href="#" class="btn-icon-left">
 						左側にアイコン
-						<span class="ui-icon ui-icon-star"></span>
+						<span class="icon icon-star"></span>
 					</a>
-					<a href="#" class="ui-btn-icon">
+					<a href="#" class="btn-icon">
 						右側にアイコン
-						<span class="ui-icon ui-icon-home"></span>
+						<span class="icon icon-home"></span>
 					</a>
 				</div>
-				<div class="ui-nav ui-nav-2">
-					<a href="#" class="ui-btn-icon-top">
+				<div class="nav nav-2">
+					<a href="#" class="btn-icon-top">
 						上側にアイコン
-						<span class="ui-icon ui-icon-gear"></span>
+						<span class="icon icon-gear"></span>
 					</a>
-					<a href="#" class="ui-btn-icon-bottom">
+					<a href="#" class="btn-icon-bottom">
 						下側にアイコン
-						<span class="ui-icon ui-icon-check"></span>
+						<span class="icon icon-check"></span>
 					</a>
 				</div>
 				<p>
@@ -273,13 +318,13 @@
 			</div>
 		</div>
 		<div id="footer">
-			<div class="ui-nav ui-nav-4">
+			<div class="nav nav-4">
 				<a href="#">Home</a>
 				<a href="#">Hoge</a>
 				<a href="#">Fuga</a>
 				<a href="#">Piyo</a>
 			</div>
-			<div class="ui-bar"><h5>(c) najeira</h5></div>
+			<div class="bar"><h5>(c) najeira</h5></div>
 		</div>
 	</div>
 </body>
