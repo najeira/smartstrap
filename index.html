@@ -8,458 +8,557 @@
 <style type="text/css">
 #page {
 	width: 480px;
-	border: 1px solid #000;
-	margin: 10px;
+	border: 1px solid #ccc;
+	margin: 10px auto;
 }
 </style>
 </head>
 <body>
-	<div id="page">
-		<div id="header" class="bar">
-			<h1>Smartstrap</h1>
-			<a href="#">Mypage</a>
-		</div>
-		<div id="content">
-			<h2>Smartstrapとは？</h2>
-			<div>
-				<p>
-					Smartstrapはスマートフォン向けのWebサイトを作るためのCSSテンプレートです。
-				</p>
-				<p>
-					Twitter bootstrapをベースに、スマートフォン用に変更、および不要部分の削除をしています。
-				</p>
-				<p>
-					jQuery Mobileなどとは違い、CSSだけで使うことができます。
-				</p>
-			</div>
+<div id="page">
+<div id="header" class="bar">
+	<h1>Smartstrap</h1>
+	<a href="https://github.com/najeira/smartstrap" target="_blank">Github</a>
+</div>
+<div id="content">
+<h2>Smartstrapとは？</h2>
+<div>
+	<p>
+		Smartstrapはスマートフォン向けのWebサイトを作るためのCSSテンプレート・テーマです。
+	</p>
+	<p>
+		Twitter's bootstrapをベースに、スマートフォン用に変更をしています。<br />
+		ファイルサイズは約30KB (Twitter's bootstrapは47KB) と軽量化されています。
+	</p>
+	<p>
+		jQuery Mobileなどとは違い、CSSだけで使うことができます。
+		また、スマートフォンだけでなくPCで見た場合にも使えるようにしています。
+	</p>
+</div>
 
-			<h2>使い方</h2>
-			<div>
-				<p>
-					CSSを読み込むだけで使うことができます。
-				</p>
-				<p>
-					アイコンを使う場合は、同梱の .png ファイルをCSSと同じディレクトリに置いてください。
-					アイコンを使わない場合 ( .icon クラスを使わない場合 ) は、画像ファイルは不要です。
-				</p>
-			</div>
+<h2>使い方</h2>
+<div>
+	<p>
+		CSSを読み込むだけで使うことができます。
+	</p>
+	<p>
+		アイコンを使う場合は、同梱の .png ファイルをCSSと同じディレクトリに置いてください。
+		アイコンを使わない場合 ( .icon クラスを使わない場合 ) は、画像ファイルは不要です。
+	</p>
+	<p>
+		配布場所：
+		<a href="https://github.com/najeira/smartstrap" class="primary" target="_blank">Github</a>
+	</p>
+	<p class="alert-message">
+		現在はバージョンアップでクラス名などの変更が起こりえますので、
+		ご留意の上で使用して下さい。
+	</p>
+</div>
 
-			<h2>デモ</h2>
-			<div>
-				<p>
-					このドキュメント自体が、Smartstrapを使用して記述されています。
-					詳しい使い方は、このドキュメントのHTMLを御覧ください。
-				</p>
-			</div>
+<h2>デモ</h2>
+<div>
+	<p>
+		このドキュメント自体が、Smartstrapを使用して記述されています。
+		詳しい使い方は、このドキュメントのHTMLを御覧ください。
+	</p>
+</div>
 
-			<h3>ボタン</h3>
-			<div>
-				<p>
-					通常のリンクはボタンのような見た目になります。
-				</p>
-				<p>
-					<a href="#">こんにちは</a>
-					<a href="#">こんばんは</a>
-				</p>
-			</div>
+<h3>ボタン</h3>
+<div>
+	<p>
+		通常のリンク(Aタグ)はボタンのような見た目になります。
+	</p>
+	<p>
+		<a href="#">こんにちは</a>
+		<a href="#">こんばんは</a>
+	</p>
+</div>
 
-			<h4>ボタンの色</h4>
-			<div>
-				<p>
-					class を使うことで、色を変えることができます。
-					ボタンの意味に応じて使い分けてください。
-				</p>
-				<p>
-					<a href="#" class="success">.success です</a>
-					<a href="#" class="info">.info です</a>
-					<a href="#" class="primary">.primary です</a>
-				</p>
-				<p>
-					<a href="#" class="danger">.danger です</a>
-					<a href="#" class="notice">.notice です</a>
-					<a href="#" class="disabled">.disabled です</a>
-				</p>
-			</div>
+<h4>ボタンの色</h4>
+<div>
+	<p>
+		class を使うことで、色を変えることができます。
+		ボタンの意味に応じて使い分けてください。
+	</p>
+	<p>
+		<a href="#" class="success">.success です</a>
+		<a href="#" class="info">.info です</a>
+		<a href="#" class="primary">.primary です</a>
+	</p>
+	<p>
+		<a href="#" class="danger">.danger です</a>
+		<a href="#" class="notice">.notice です</a>
+		<a href="#" class="disabled">.disabled です</a>
+	</p>
+</div>
 
-			<h4>ボタンのアイコン</h4>
-			<div>
-				<p>
-					ボタンにアイコンを使うこともできます。
-					Aタグに .btn-icon を設定し、Aタグ内にアイコン用のタグを記述します。<br />
-				</p>
-				<p>
-					<code>
-						&lt;a href="..." class="btn-icon"&gt;
-						ボタンのテキスト
-						&lt;span class="icon icon-home"&gt;&lt;/span&gt;
-						&lt;/a&gt;
-					</code>
-				</p>
-				<p>
-					<a href="#" class="btn-icon">
-						こんにちは
-						<span class="icon icon-home"></span>
-					</a>
-				</p>
-			</div>
+<h4>ボタンのアイコン</h4>
+<div>
+	<p>
+		ボタンにアイコンを使うこともできます。
+		Aタグに .btn-icon を設定し、Aタグ内にアイコン用のタグを記述します。<br />
+	</p>
+	<p>
+		<code>
+			&lt;a href="..." class="btn-icon"&gt;
+			ボタンのテキスト
+			&lt;span class="icon icon-plus"&gt;&lt;/span&gt;
+			&lt;/a&gt;
+		</code>
+	</p>
+	<p>
+		<a href="#" class="btn-icon">
+			こんにちは
+			<span class="icon icon-plus"></span>
+		</a>
+	</p>
+</div>
 
-			<h4>ボタンのアイコンのオプション</h4>
-			<div>
-				<p>
-					アイコン、および位置はクラスによって変更できます。
-					<dl>
-						<dt>.btn-icon</dt>
-						<dd>アイコンを右側に表示します</dd>
-						<dt>.btn-icon-left</dt>
-						<dd>アイコンを左側に表示します</dd>
-						<dt>.btn-icon-top</dt>
-						<dd>アイコンを上側に表示します</dd>
-						<dt>.btn-icon-bottom</dt>
-						<dd>アイコンを下側に表示します</dd>
-					</dl>
-				</p>
-				<p>
-					<a href="#" class="btn-icon-left">
-						こんばんは
-						<span class="icon icon-star"></span>
-					</a>
-					<a href="#" class="btn-icon-top success">
-						あいうえお
-						<span class="icon icon-gear"></span>
-					</a>
-					<a href="#" class="btn-icon-bottom info">
-						かきくけこ
-						<span class="icon icon-check"></span>
-					</a>
-				</p>
-				<p>
-					<a href="#" class="btn-icon-top primary">
-						さしすせそ
-						<span class="icon icon-gear"></span>
-					</a>
-					<a href="#" class="btn-icon-bottom error">
-						たちつてと
-						<span class="icon icon-check"></span>
-					</a>
-					<a href="#" class="btn-icon-top disabled">
-						なにぬねの
-						<span class="icon icon-gear"></span>
-					</a>
-				</p>
-			</div>
+<h4>ボタンのアイコンの種類</h4>
+<div>
+	<p>
+		アイコンの種類はクラスによって変更できます。
+	</p>
+	<p>
+		<a href="#" class="btn-icon-left">
+			.icon-plus<span class="icon icon-plus"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-minus<span class="icon icon-minus"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-delete<span class="icon icon-delete"><span></a>
+	</p>
+	<p>
+		<a href="#" class="btn-icon-left">
+			.icon-arrow-r<span class="icon icon-arrow-r"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-arrow-l<span class="icon icon-arrow-l"><span></a>
+	</p>
+	<p>
+		<a href="#" class="btn-icon-left">
+			.icon-arrow-u<span class="icon icon-arrow-u"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-arrow-d<span class="icon icon-arrow-d"><span></a>
+	</p>
+	<p>
+		<a href="#" class="btn-icon-left">
+			.icon-check<span class="icon icon-check"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-gear<span class="icon icon-gear"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-refresh<span class="icon icon-refresh"><span></a>
+	</p>
+	<p>
+		<a href="#" class="btn-icon-left">
+			.icon-forward<span class="icon icon-forward"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-back<span class="icon icon-back"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-grid<span class="icon icon-grid"><span></a>
+	</p>
+	<p>
+		<a href="#" class="btn-icon-left">
+			.icon-star<span class="icon icon-star"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-alert<span class="icon icon-alert"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-info<span class="icon icon-info"><span></a>
+	</p>
+	<p>
+		<a href="#" class="btn-icon-left">
+			.icon-home<span class="icon icon-home"><span></a>
+		<a href="#" class="btn-icon-left">
+			.icon-search<span class="icon icon-search"><span></a>
+	</p>
+</div>
 
-			<h4>ボタンのグループ化</h4>
-			<div>
-				<p>
-					リンクを .btn-group で囲むと、グループ化することができます。
-				</p>
-				<p class="btn-group">
-					<a href="#">ひだり</a>
-					<a href="#">まんなか</a>
-					<a href="#">みぎ</a>
-					.btn-group
-				</p>
-				<p class="btn-group btn-icon">
-					<a href="#">
-						ひだり
-						<span class="icon icon-arrow-r"></span>
-					</a>
-					<a href="#">
-						まんなか
-						<span class="icon icon-arrow-r"></span>
-					</a>
-					<a href="#">
-						みぎ
-						<span class="icon icon-arrow-r"></span>
-					</a>
-					.btn-group .btn-icon
-				</p>
-				<p class="btn-group btn-icon-left">
-					<a href="#">
-						ひだり
-						<span class="icon icon-arrow-l"></span>
-					</a>
-					<a href="#">
-						まんなか
-						<span class="icon icon-arrow-l"></span>
-					</a>
-					<a href="#">
-						みぎ
-						<span class="icon icon-arrow-l"></span>
-					</a>
-					.btn-group .btn-icon-left
-				</p>
-				<p class="btn-group btn-icon-top">
-					<a href="#">
-						ひだり
-						<span class="icon icon-arrow-u"></span>
-					</a>
-					<a href="#">
-						まんなか
-						<span class="icon icon-arrow-u"></span>
-					</a>
-					<a href="#">
-						みぎ
-						<span class="icon icon-arrow-u"></span>
-					</a>
-					.btn-group .btn-icon-top
-				</p>
-				<p class="btn-group btn-icon-bottom">
-					<a href="#">
-						ひだり
-						<span class="icon icon-arrow-d"></span>
-					</a>
-					<a href="#">
-						まんなか
-						<span class="icon icon-arrow-d"></span>
-					</a>
-					<a href="#">
-						みぎ
-						<span class="icon icon-arrow-d"></span>
-					</a>
-					.btn-group .btn-icon-bottom
-				</p>
-				<p class="btn-group">
-					<a href="#" class="btn-icon-top">
-						ひだり
-						<span class="icon icon-arrow-u"></span>
-					</a>
-					<a href="#" class="btn-icon-bottom">
-						みぎ
-						<span class="icon icon-arrow-d"></span>
-					</a>
-				</p>
-			</div>
+<h4>ボタンのアイコンの位置</h4>
+<div>
+	<p>
+		アイコンの位置はクラスによって変更できます。
+		<dl>
+			<dt>.btn-icon</dt>
+			<dd>アイコンを右側に表示します</dd>
+			<dt>.btn-icon-left</dt>
+			<dd>アイコンを左側に表示します</dd>
+			<dt>.btn-icon-top</dt>
+			<dd>アイコンを上側に表示します</dd>
+			<dt>.btn-icon-bottom</dt>
+			<dd>アイコンを下側に表示します</dd>
+		</dl>
+	</p>
+	<p>
+		<a href="#" class="btn-icon">
+			.btn-icon
+			<span class="icon icon-home"></span>
+		</a>
+		<a href="#" class="btn-icon-left">
+			.btn-icon-left
+			<span class="icon icon-star"></span>
+		</a>
+	</p>
+	<p>
+		<a href="#" class="btn-icon-top">
+			.btn-icon-top
+			<span class="icon icon-gear"></span>
+		</a>
+		<a href="#" class="btn-icon-bottom">
+			.btn-icon-bottom
+			<span class="icon icon-check"></span>
+		</a>
+	</p>
+</div>
 
-			<h3>リストビュー</h3>
-			<div>
-				<p>
-					ul.listview を使うと、リンクをリストビューで表示します。
-				</p>
-				<ul class="listview">
-					<li>
-						<a href="#">あいうえお</a>
-					</li>
-					<li>
-						<a href="#">かきくけこ</a>
-					</li>
-					<li>
-						<a href="#">さしすせそ</a>
-					</li>
-					<li>
-						<a href="#">たちつてと</a>
-					</li>
-				</ul>
-			</div>
+<h4>ボタンのグループ化</h4>
+<div>
+	<p>
+		リンクを .btn-group を持つタグで囲むと、グループ化することができます。
+	</p>
+	<p class="btn-group">
+		<a href="#">ひだり</a>
+		<a href="#">まんなか</a>
+		<a href="#">みぎ</a>
+		.btn-group
+	</p>
+	<p>
+		アイコンのオプションと組み合わせることも出来ます。
+	</p>
+	<p class="btn-group btn-icon">
+		<a href="#">
+			ひだり
+			<span class="icon icon-arrow-r"></span>
+		</a>
+		<a href="#">
+			まんなか
+			<span class="icon icon-arrow-r"></span>
+		</a>
+		<a href="#">
+			みぎ
+			<span class="icon icon-arrow-r"></span>
+		</a>
+		.btn-group .btn-icon
+	</p>
+	<p class="btn-group btn-icon-left">
+		<a href="#">
+			ひだり
+			<span class="icon icon-arrow-l"></span>
+		</a>
+		<a href="#">
+			まんなか
+			<span class="icon icon-arrow-l"></span>
+		</a>
+		<a href="#">
+			みぎ
+			<span class="icon icon-arrow-l"></span>
+		</a>
+		.btn-group .btn-icon-left
+	</p>
+	<p class="btn-group btn-icon-top">
+		<a href="#">
+			ひだり
+			<span class="icon icon-arrow-u"></span>
+		</a>
+		<a href="#">
+			まんなか
+			<span class="icon icon-arrow-u"></span>
+		</a>
+		<a href="#">
+			みぎ
+			<span class="icon icon-arrow-u"></span>
+		</a>
+		.btn-group .btn-icon-top
+	</p>
+	<p class="btn-group btn-icon-bottom">
+		<a href="#">
+			ひだり
+			<span class="icon icon-arrow-d"></span>
+		</a>
+		<a href="#">
+			まんなか
+			<span class="icon icon-arrow-d"></span>
+		</a>
+		<a href="#">
+			みぎ
+			<span class="icon icon-arrow-d"></span>
+		</a>
+		.btn-group .btn-icon-bottom
+	</p>
+	<p class="btn-group">
+		<a href="#" class="btn-icon-top">
+			ひだり
+			<span class="icon icon-arrow-u"></span>
+		</a>
+		<a href="#" class="btn-icon-bottom">
+			みぎ
+			<span class="icon icon-arrow-d"></span>
+		</a>
+	</p>
+</div>
 
-			<h4>リストビューのアイコン</h4>
-			<div>
-				<p>
-					リストビューのリストにアイコンを表示する例です。
-				</p>
-				<ul class="listview btn-icon">
-					<li>
-						<a href="#">
-							右側にアイコン
-							<span class="icon icon-home"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							右側にアイコン
-							<span class="icon icon-star"></span>
-						</a>
-					</li>
-				</ul>
-				<ul class="listview btn-icon-left">
-					<li>
-						<a href="#">
-							左側にアイコン
-							<span class="icon icon-star"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							左側にアイコン
-							<span class="icon icon-gear"></span>
-						</a>
-					</li>
-				</ul>
-				<ul class="listview btn-icon-top icon-gear">
-					<li>
-						<a href="#">
-							上側にアイコン
-							<span class="icon"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							上側にアイコン
-							<span class="icon"></span>
-						</a>
-					</li>
-				</ul>
-				<ul class="listview btn-icon-bottom">
-					<li>
-						<a href="#">
-							下側にアイコン
-							<span class="icon icon-check"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							下側にアイコン
-							<span class="icon icon-info"></span>
-						</a>
-					</li>
-				</ul>
-			</div>
+<h4>リンクテキスト</h4>
+<div>
+	<p>
+		従来のリンクテキストにするためには .linktext を使います。
+	</p>
+	<p>
+		<a href="#" class="linktext">リンクテキスト形式です</a>
+	</p>
+</div>
 
-			<h3>グリッド</h3>
-			<div>
-				<p>
-					グリッドでリンクボタンを並べることができます。
-				</p>
-				<div class="grid grid-2">
-					<a href="#" class="btn-icon-left">
-						左側にアイコン
-						<span class="icon icon-star"></span>
-					</a>
-					<a href="#" class="btn-icon">
-						右側にアイコン
-						<span class="icon icon-home"></span>
-					</a>
-					<a href="#" class="btn-icon-top">
-						上側にアイコン
-						<span class="icon icon-gear"></span>
-					</a>
-					<a href="#" class="btn-icon-bottom">
-						下側にアイコン
-						<span class="icon icon-check"></span>
-					</a>
-				</div>
-				<p>
-					グリッドは1から5個までのボタンを並べることができます。
-				</p>
-				<div class="grid grid-2 primary">
-					<a href="#">おはよう</a>
-					<a href="#">おやすみ</a>
-				</div>
-				<br />
-				<div class="grid grid-2 success">
-					<a href="#">おはよう</a>
-					<a href="#">おやすみ</a>
-				</div>
-				<br />
-				<div class="grid grid-2 info">
-					<a href="#">おはよう</a>
-					<a href="#">おやすみ</a>
-				</div>
-				<br />
-				<div class="grid grid-2 notice">
-					<a href="#">おはよう</a>
-					<a href="#">おやすみ</a>
-				</div>
-				<br />
-				<div class="grid grid-2 danger">
-					<a href="#">おはよう</a>
-					<a href="#">おやすみ</a>
-				</div>
-				<br />
-				<div class="grid grid-2 menu">
-					<a href="#">おはよう</a>
-					<a href="#">おやすみ</a>
-				</div>
-				<p>
-					これらのように色を設定することもできます。
-				</p>
-			</div>
+<h3>リストビュー</h3>
+<div>
+	<p>
+		ul.listview を使うと、リンクをリストビューで表示します。
+	</p>
+	<ul class="listview">
+		<li>
+			<a href="#">あいうえお</a>
+		</li>
+		<li>
+			<a href="#">かきくけこ</a>
+		</li>
+		<li>
+			<a href="#">さしすせそ</a>
+		</li>
+		<li>
+			<a href="#">たちつてと</a>
+		</li>
+	</ul>
+</div>
 
-			<h3>リスト</h3>
-			<div>
-				<p>
-					リストビューではない、通常のリストです
-				</p>
-				<ul>
-					<li>ボルドー</li>
-					<li>ブルゴーニュ</li>
-					<li>ランス</li>
-				</ul>
-				<ol>
-					<li>マルゴー</li>
-					<li>オーブリオン</li>
-					<li>ラトゥール</li>
-				</ol>
-			</div>
+<h4>リストビューのアイコン</h4>
+<div>
+	<p>
+		リストビューのリストにアイコンを表示する例です。
+	</p>
+	<ul class="listview btn-icon">
+		<li>
+			<a href="#">
+				右側にアイコン
+				<span class="icon icon-home"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				右側にアイコン
+				<span class="icon icon-star"></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="listview btn-icon-left">
+		<li>
+			<a href="#">
+				左側にアイコン
+				<span class="icon icon-star"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				左側にアイコン
+				<span class="icon icon-gear"></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="listview btn-icon-top icon-gear">
+		<li>
+			<a href="#">
+				上側にアイコン
+				<span class="icon"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				上側にアイコン
+				<span class="icon"></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="listview btn-icon-bottom">
+		<li>
+			<a href="#">
+				下側にアイコン
+				<span class="icon icon-check"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				下側にアイコン
+				<span class="icon icon-info"></span>
+			</a>
+		</li>
+	</ul>
+</div>
 
-			<h4>alert-message</h4>
-			<div>
-				<p class="alert-message">
-					One-line messages for highlighting the failure, possible failure, 
-					or success of an action. Particularly useful for forms.
-				</p>
-			</div>
-
-			<h4>バー</h4>
-			<div>
-				<div class="bar">
-					<h1>ヘッダ、フッタなどのバー</h1>
-				</div>
-				<div class="bar primary">
-					<h1>.primary のバー</h1>
-				</div>
-				<div class="bar success">
-					<h1>.success のバー</h1>
-				</div>
-				<div class="bar info">
-					<h1>.info のバー</h1>
-				</div>
-				<div class="bar notice">
-					<h1>.notice のバー</h1>
-				</div>
-				<div class="bar danger">
-					<h1>.danger のバー</h1>
-				</div>
-			</div>
-
-			<h4>Form</h4>
-			<div>
-				<form>
-					<fieldset>
-						<label>labelです</label>
-						<input type="text" placeholder="テキスト" />
-					</fieldset>
-					<fieldset>
-						<textarea></textarea>
-					</fieldset>
-					<fieldset>
-						<select>
-							<option>ビール</option>
-							<option>ワイン</option>
-							<option>焼酎</option>
-							<option>日本酒</option>
-						</select>
-					</fieldset>
-					<fieldset class="inputs-list">
-						<label>
-							<input type="checkbox" />
-							これは checkbox です
-						</label>
-					</fieldset>
-					<input type="submit" value="送信" class="primary" />
-					<input type="reset" value="キャンセル" />
-				</form>
-			</div>
-		</div>
-		<div id="footer">
-			<div class="grid grid-4 menu">
-				<a href="#">Home</a>
-				<a href="#">Hoge</a>
-				<a href="#">Fuga</a>
-				<a href="#">Piyo</a>
-			</div>
-			<div class="bar"><h5>(c) najeira</h5></div>
-		</div>
+<h3>グリッド</h3>
+<div>
+	<p>
+		グリッドでリンクボタンを並べることができます。
+	</p>
+	<div class="grid grid-2">
+		<a href="#" class="btn-icon-left">
+			左側にアイコン
+			<span class="icon icon-star"></span>
+		</a>
+		<a href="#" class="btn-icon">
+			右側にアイコン
+			<span class="icon icon-home"></span>
+		</a>
+		<a href="#" class="btn-icon-top">
+			上側にアイコン
+			<span class="icon icon-gear"></span>
+		</a>
+		<a href="#" class="btn-icon-bottom">
+			下側にアイコン
+			<span class="icon icon-check"></span>
+		</a>
 	</div>
+	<p>
+		グリッドは1から5個までのボタンを並べることができます。
+	</p>
+	<div class="grid grid-3">
+		<a href="#">あいうえお</a>
+		<a href="#">かきくけこ</a>
+		<a href="#">さしすせそ</a>
+	</div>
+	<br />
+	<div class="grid grid-4">
+		<a href="#">あいうえお</a>
+		<a href="#">かきくけこ</a>
+		<a href="#">さしすせそ</a>
+		<a href="#">たちつてと</a>
+	</div>
+	<br />
+	<div class="grid grid-5">
+		<a href="#">あいうえお</a>
+		<a href="#">かきくけこ</a>
+		<a href="#">さしすせそ</a>
+		<a href="#">たちつてと</a>
+		<a href="#">なにぬねの</a>
+	</div>
+	<p>
+		色のオプションを使うことも出来ます。
+	</p>
+	<div class="grid grid-2 primary">
+		<a href="#">おはよう</a>
+		<a href="#">おやすみ</a>
+	</div>
+	<br />
+	<div class="grid grid-2 success">
+		<a href="#">おはよう</a>
+		<a href="#">おやすみ</a>
+	</div>
+	<br />
+	<div class="grid grid-2 info">
+		<a href="#">おはよう</a>
+		<a href="#">おやすみ</a>
+	</div>
+	<br />
+	<div class="grid grid-2 notice">
+		<a href="#">おはよう</a>
+		<a href="#">おやすみ</a>
+	</div>
+	<br />
+	<div class="grid grid-2 danger">
+		<a href="#">おはよう</a>
+		<a href="#">おやすみ</a>
+	</div>
+	<br />
+	<div class="grid grid-2 menu">
+		<a href="#">おはよう</a>
+		<a href="#">おやすみ</a>
+	</div>
+</div>
+
+<h3>リスト</h3>
+<div>
+	<p>
+		リストビューではない、通常のリストです
+	</p>
+	<ul>
+		<li>ボルドー</li>
+		<li>ブルゴーニュ</li>
+		<li>ランス</li>
+	</ul>
+	<ol>
+		<li>マルゴー</li>
+		<li>オーブリオン</li>
+		<li>ラトゥール</li>
+	</ol>
+</div>
+
+<h4>アラート</h4>
+<div>
+	<p class="alert-message">
+		エラーや完了などのユーザへの通知メッセージに使います
+	</p>
+	<p class="alert-message primary">.primary のアラートです</p>
+	<p class="alert-message success">.success のアラートです</p>
+	<p class="alert-message info">.info のアラートです</p>
+	<p class="alert-message danger">.danger のアラートです</p>
+</div>
+
+<h4>バー</h4>
+<div>
+	<div class="bar">
+		<h1>ヘッダ、フッタなどのバー</h1>
+	</div>
+	<div class="bar primary">
+		<h1>.primary のバー</h1>
+	</div>
+	<div class="bar success">
+		<h1>.success のバー</h1>
+	</div>
+	<div class="bar info">
+		<h1>.info のバー</h1>
+	</div>
+	<div class="bar notice">
+		<h1>.notice のバー</h1>
+	</div>
+	<div class="bar danger">
+		<h1>.danger のバー</h1>
+	</div>
+</div>
+
+<h4>Form</h4>
+<div>
+	<form>
+		<fieldset>
+			<label>labelです</label>
+			<input type="text" placeholder="テキスト" />
+		</fieldset>
+		<fieldset>
+			<textarea></textarea>
+		</fieldset>
+		<fieldset>
+			<select>
+				<option>ぐーぐる</option>
+				<option>やふー</option>
+				<option>まいくろそふと</option>
+			</select>
+		</fieldset>
+		<fieldset class="inputs-list">
+			<label>
+				<input type="checkbox" />これは checkbox です
+			</label>
+			<label>
+				<input type="checkbox" />これは checkbox です
+			</label>
+		</fieldset>
+		<input type="submit" value="送信" class="primary" />
+		<input type="reset" value="キャンセル" />
+	</form>
+</div>
+</div>
+<div id="footer">
+	<div class="grid grid-4 menu">
+		<a href="#">Home</a>
+		<a href="#">Hoge</a>
+		<a href="#">Fuga</a>
+		<a href="#">Piyo</a>
+	</div>
+	<div class="bar">
+		<h5>(c) najeira</h5>
+		<a href="https://github.com/najeira/smartstrap" target="_blank">Github</a>
+	</div>
+</div>
+</div>
 </body>
 </html>
