@@ -1029,9 +1029,6 @@ a.small {
 	text-overflow: ellipsis;
 	line-height: 48px;
 }
-.bar.notice h1, .bar.notice h5 {
-	color: #404040;
-}
 .bar h1 {
 	margin: 0 90px;
 	font-size: 16px;
@@ -1302,21 +1299,6 @@ li a.btn-icon-bottom, .bar a.btn-icon-bottom, .bar a.btn-icon-bottom {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#339bb9', GradientType=0);
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	border-color: #339bb9 #339bb9 #22697d;
-	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-}
-.notice, .grid.notice a {
-	color: #404040;
-	background-color: #eedc94;
-	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #fceec1, #eedc94);
-	background-image: -ms-linear-gradient(top, #fceec1, #eedc94);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fceec1), color-stop(100%, #eedc94));
-	background-image: -webkit-linear-gradient(top, #fceec1, #eedc94);
-	background-image: -o-linear-gradient(top, #fceec1, #eedc94);
-	background-image: linear-gradient(top, #fceec1, #eedc94);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fceec1', endColorstr='#eedc94', GradientType=0);
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-	border-color: #eedc94 #eedc94 #e4c652;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .menu, .bar a, .grid.menu a {

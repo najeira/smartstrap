@@ -5,13 +5,16 @@
 <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0,maximum-scale=3.0" />
 <title>Smartstrap</title>
 <link rel="stylesheet" href="smartstrap.css" type="text/css" />
-<style type="text/css">
-#page {
-	width: 480px;
-	border: 1px solid #ccc;
-	margin: 10px auto;
+<script type="text/javascript">
+(function () {
+var _UA = navigator.userAgent;
+if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('Android') > -1)) {
+	document.write('<style type="text/css">#page {');
+	document.write('width: 480px;border: 1px solid #ccc;margin: 10px auto;}</style>');
+	document.write('}</style>');
 }
-</style>
+})();
+</script>
 </head>
 <body>
 <div id="page">
@@ -86,7 +89,6 @@
 	</p>
 	<p>
 		<a href="#" class="danger">.danger です</a>
-		<a href="#" class="notice">.notice です</a>
 		<a href="#" class="disabled">.disabled です</a>
 	</p>
 </div>
@@ -451,11 +453,6 @@
 		<a href="#">おやすみ</a>
 	</div>
 	<br />
-	<div class="grid grid-2 notice">
-		<a href="#">おはよう</a>
-		<a href="#">おやすみ</a>
-	</div>
-	<br />
 	<div class="grid grid-2 danger">
 		<a href="#">おはよう</a>
 		<a href="#">おやすみ</a>
@@ -508,9 +505,6 @@
 	</div>
 	<div class="bar info">
 		<h1>.info のバー</h1>
-	</div>
-	<div class="bar notice">
-		<h1>.notice のバー</h1>
 	</div>
 	<div class="bar danger">
 		<h1>.danger のバー</h1>
