@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0,maximum-scale=3.0" />
 <title>Smartstrap</title>
-<link rel="stylesheet" href="smartstrap.css" type="text/css" />
+<link rel="stylesheet" href="smartstrap2.css" type="text/css" />
 <script type="text/javascript">
 (function () {
 var _UA = navigator.userAgent;
@@ -29,8 +29,8 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 		Smartstrapはスマートフォン向けのWebサイトを作るためのCSSテンプレート・テーマです。
 	</p>
 	<p>
-		Twitter's bootstrapをベースに、スマートフォン用に変更をしています。<br />
-		ファイルサイズは約30KB (Twitter's bootstrapは47KB) と軽量化されています。
+		Twitter's Bootstrapをベースに、スマートフォン用に変更をしています。<br />
+		ファイルサイズは約30KB (Twitter's Bootstrapは60KB) と軽量化されています。
 	</p>
 	<p>
 		jQuery Mobileなどとは違い、CSSだけで使うことができます。
@@ -49,9 +49,14 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 	</p>
 	<p>
 		配布場所：
-		<a href="https://github.com/najeira/smartstrap" class="primary" target="_blank">Github</a>
+		<a href="https://github.com/najeira/smartstrap"
+			class="btn btn-primary" target="_blank">Github</a>
 	</p>
-	<p class="alert-message">
+	<p class="alert alert-error">
+		Twitter's Bootstrapのバージョン2にあわせて大幅に更新しました。
+		2012/2/1以前のバージョンとは互換性はありません。
+	</p>
+	<p class="alert">
 		現在はバージョンアップでクラス名などの変更が起こりえますので、
 		ご留意の上で使用して下さい。
 	</p>
@@ -68,11 +73,11 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 <h3>ボタン</h3>
 <div>
 	<p>
-		通常のリンク(Aタグ)はボタンのような見た目になります。
+		.btn クラスを使うことで、見た目がボタンになります。
 	</p>
 	<p>
-		<a href="#">こんにちは</a>
-		<a href="#">こんばんは</a>
+		<a href="#" class="btn">こんにちは</a>
+		<a href="#" class="btn">こんばんは</a>
 	</p>
 </div>
 
@@ -83,13 +88,14 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 		ボタンの意味に応じて使い分けてください。
 	</p>
 	<p>
-		<a href="#" class="success">.success です</a>
-		<a href="#" class="info">.info です</a>
-		<a href="#" class="primary">.primary です</a>
+		<a href="#" class="btn">.btn です</a>
+		<a href="#" class="btn btn-primary">.btn-primary です</a>
+		<a href="#" class="btn btn-info">.btn-info です</a>
 	</p>
 	<p>
-		<a href="#" class="danger">.danger です</a>
-		<a href="#" class="disabled">.disabled です</a>
+		<a href="#" class="btn btn-success">.btn-success です</a>
+		<a href="#" class="btn btn-danger">.btn-danger です</a>
+		<a href="#" class="btn btn-warning">.btn-warning です</a>
 	</p>
 </div>
 
@@ -108,9 +114,9 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 		</code>
 	</p>
 	<p>
-		<a href="#" class="btn-icon">
+		<a href="#" class="btn btn-icon-right">
 			こんにちは
-			<span class="icon icon-plus"></span>
+			<span class="icon-star"></span>
 		</a>
 	</p>
 </div>
@@ -483,13 +489,13 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 
 <h4>アラート</h4>
 <div>
-	<p class="alert-message">
+	<p class="alert">
 		エラーや完了などのユーザへの通知メッセージに使います
 	</p>
-	<p class="alert-message primary">.primary のアラートです</p>
-	<p class="alert-message success">.success のアラートです</p>
-	<p class="alert-message info">.info のアラートです</p>
-	<p class="alert-message danger">.danger のアラートです</p>
+	<p class="alert primary">.primary のアラートです</p>
+	<p class="alert success">.success のアラートです</p>
+	<p class="alert info">.info のアラートです</p>
+	<p class="alert danger">.danger のアラートです</p>
 </div>
 
 <h4>バー</h4>
