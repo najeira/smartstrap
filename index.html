@@ -4,13 +4,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0,maximum-scale=3.0" />
 <title>Smartstrap</title>
-<link rel="stylesheet" href="smartstrap2.css" type="text/css" />
+<link rel="stylesheet" href="smartstrap.css" type="text/css" />
 <script type="text/javascript">
 (function () {
-var _UA = navigator.userAgent;
-if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('Android') > -1)) {
+if (!(navigator.userAgent.indexOf('iPhone') > -1 ||
+	navigator.userAgent.indexOf('iPod') > -1 ||
+	navigator.userAgent.indexOf('Android') > -1)) {
 	document.write('<style type="text/css">#page {');
-	document.write('width: 480px;border: 1px solid #ccc;margin: 10px auto;');
+	document.write('width:480px;border:1px solid #ccc;margin:5px auto;padding:5px;');
 	document.write('}</style>');
 }
 })();
@@ -18,9 +19,9 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 </head>
 <body>
 <div id="page">
-<div id="header" class="bar">
-	<h1>Smartstrap</h1>
-	<a href="https://github.com/najeira/smartstrap" target="_blank">Github</a>
+<div id="header" class="navbar">
+	<h1><a href="#">Smartstrap</a></h1>
+	<a href="https://github.com/najeira/smartstrap" class="btn" target="_blank">Github</a>
 </div>
 <div id="content">
 <h2>Smartstrapとは？</h2>
@@ -30,7 +31,6 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 	</p>
 	<p>
 		Twitter's Bootstrapをベースに、スマートフォン用に変更をしています。<br />
-		ファイルサイズは約30KB (Twitter's Bootstrapは60KB) と軽量化されています。
 	</p>
 	<p>
 		jQuery Mobileなどとは違い、CSSだけで使うことができます。
@@ -73,7 +73,7 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 <h3>ボタン</h3>
 <div>
 	<p>
-		.btn クラスを使うことで、見た目がボタンになります。
+		.btn クラスを使うことで、見た目がボタンになります。以下のボタンはAタグです。
 	</p>
 	<p>
 		<a href="#" class="btn">こんにちは</a>
@@ -88,12 +88,14 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 		ボタンの意味に応じて使い分けてください。
 	</p>
 	<p>
-		<a href="#" class="btn">.btn です</a>
+		<a href="#" class="btn">デフォルトです</a>
 		<a href="#" class="btn btn-primary">.btn-primary です</a>
-		<a href="#" class="btn btn-info">.btn-info です</a>
 	</p>
 	<p>
+		<a href="#" class="btn btn-info">.btn-info です</a>
 		<a href="#" class="btn btn-success">.btn-success です</a>
+	</p>
+	<p>
 		<a href="#" class="btn btn-danger">.btn-danger です</a>
 		<a href="#" class="btn btn-warning">.btn-warning です</a>
 	</p>
@@ -106,16 +108,14 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 		Aタグに .btn-icon を設定し、Aタグ内にアイコン用のタグを記述します。<br />
 	</p>
 	<p>
-		<code>
-			&lt;a href="..." class="btn-icon"&gt;
-			ボタンのテキスト
-			&lt;span class="icon icon-plus"&gt;&lt;/span&gt;
-			&lt;/a&gt;
-		</code>
+		<pre>&lt;a href="..." class="btn btn-icon"&gt;
+ボタンのテキスト
+&lt;span class="icon-star"&gt;&lt;/span&gt;
+&lt;/a&gt;</pre>
 	</p>
 	<p>
-		<a href="#" class="btn btn-icon-right">
-			こんにちは
+		<a href="#" class="btn btn-icon">
+			ボタンのテキスト
 			<span class="icon-star"></span>
 		</a>
 	</p>
@@ -127,54 +127,35 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 		アイコンの種類はクラスによって変更できます。
 	</p>
 	<p>
-		<a href="#" class="btn-icon-left">
-			.icon-plus<span class="icon icon-plus"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-minus<span class="icon icon-minus"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-delete<span class="icon icon-delete"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-plus<span class="icon-plus"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-minus<span class="icon-minus"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-gear<span class="icon-gear"><span></a>
 	</p>
 	<p>
-		<a href="#" class="btn-icon-left">
-			.icon-arrow-r<span class="icon icon-arrow-r"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-arrow-l<span class="icon icon-arrow-l"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-check<span class="icon-check"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-refresh<span class="icon-refresh"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-star<span class="icon-star"><span></a>
 	</p>
 	<p>
-		<a href="#" class="btn-icon-left">
-			.icon-arrow-u<span class="icon icon-arrow-u"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-arrow-d<span class="icon icon-arrow-d"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-alert<span class="icon-alert"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-info<span class="icon-info"><span></a>
 	</p>
 	<p>
-		<a href="#" class="btn-icon-left">
-			.icon-check<span class="icon icon-check"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-gear<span class="icon icon-gear"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-refresh<span class="icon icon-refresh"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-home<span class="icon-home"><span></a>
+		<a href="#" class="btn btn-icon">
+			.icon-search<span class="icon-search"><span></a>
 	</p>
 	<p>
-		<a href="#" class="btn-icon-left">
-			.icon-forward<span class="icon icon-forward"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-back<span class="icon icon-back"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-grid<span class="icon icon-grid"><span></a>
-	</p>
-	<p>
-		<a href="#" class="btn-icon-left">
-			.icon-star<span class="icon icon-star"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-alert<span class="icon icon-alert"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-info<span class="icon icon-info"><span></a>
-	</p>
-	<p>
-		<a href="#" class="btn-icon-left">
-			.icon-home<span class="icon icon-home"><span></a>
-		<a href="#" class="btn-icon-left">
-			.icon-search<span class="icon icon-search"><span></a>
+		他のアイコンについてはCSSとpngファイルを御覧ください。
 	</p>
 </div>
 
@@ -184,9 +165,9 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 		アイコンの位置はクラスによって変更できます。
 		<dl>
 			<dt>.btn-icon</dt>
-			<dd>アイコンを右側に表示します</dd>
-			<dt>.btn-icon-left</dt>
 			<dd>アイコンを左側に表示します</dd>
+			<dt>.btn-icon-right</dt>
+			<dd>アイコンを右側に表示します</dd>
 			<dt>.btn-icon-top</dt>
 			<dd>アイコンを上側に表示します</dd>
 			<dt>.btn-icon-bottom</dt>
@@ -194,23 +175,23 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 		</dl>
 	</p>
 	<p>
-		<a href="#" class="btn-icon">
+		<a href="#" class="btn btn-icon">
 			.btn-icon
-			<span class="icon icon-home"></span>
+			<span class="icon-home"></span>
 		</a>
-		<a href="#" class="btn-icon-left">
-			.btn-icon-left
-			<span class="icon icon-star"></span>
+		<a href="#" class="btn btn-icon-right">
+			.btn-icon
+			<span class="icon-star"></span>
 		</a>
 	</p>
 	<p>
-		<a href="#" class="btn-icon-top">
+		<a href="#" class="btn btn-icon-top">
 			.btn-icon-top
-			<span class="icon icon-gear"></span>
+			<span class="icon-gear"></span>
 		</a>
-		<a href="#" class="btn-icon-bottom">
+		<a href="#" class="btn btn-icon-bottom">
 			.btn-icon-bottom
-			<span class="icon icon-check"></span>
+			<span class="icon-check"></span>
 		</a>
 	</p>
 </div>
@@ -220,95 +201,90 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 	<p>
 		リンクを .btn-group を持つタグで囲むと、グループ化することができます。
 	</p>
-	<p class="btn-group">
-		<a href="#">ひだり</a>
-		<a href="#">まんなか</a>
-		<a href="#">みぎ</a>
-		.btn-group
-	</p>
+	<dl>
+		<dt>.btn-group</dt>
+		<dd class="btn-group">
+			<a href="#" class="btn">ひだり</a>
+			<a href="#" class="btn">まんなか</a>
+			<a href="#" class="btn">みぎ</a>
+		</dd>
+	</dl>
 	<p>
 		アイコンのオプションと組み合わせることも出来ます。
 	</p>
-	<p class="btn-group btn-icon">
-		<a href="#">
-			ひだり
-			<span class="icon icon-arrow-r"></span>
-		</a>
-		<a href="#">
-			まんなか
-			<span class="icon icon-arrow-r"></span>
-		</a>
-		<a href="#">
-			みぎ
-			<span class="icon icon-arrow-r"></span>
-		</a>
-		.btn-group .btn-icon
-	</p>
-	<p class="btn-group btn-icon-left">
-		<a href="#">
-			ひだり
-			<span class="icon icon-arrow-l"></span>
-		</a>
-		<a href="#">
-			まんなか
-			<span class="icon icon-arrow-l"></span>
-		</a>
-		<a href="#">
-			みぎ
-			<span class="icon icon-arrow-l"></span>
-		</a>
-		.btn-group .btn-icon-left
-	</p>
-	<p class="btn-group btn-icon-top">
-		<a href="#">
-			ひだり
-			<span class="icon icon-arrow-u"></span>
-		</a>
-		<a href="#">
-			まんなか
-			<span class="icon icon-arrow-u"></span>
-		</a>
-		<a href="#">
-			みぎ
-			<span class="icon icon-arrow-u"></span>
-		</a>
-		.btn-group .btn-icon-top
-	</p>
-	<p class="btn-group btn-icon-bottom">
-		<a href="#">
-			ひだり
-			<span class="icon icon-arrow-d"></span>
-		</a>
-		<a href="#">
-			まんなか
-			<span class="icon icon-arrow-d"></span>
-		</a>
-		<a href="#">
-			みぎ
-			<span class="icon icon-arrow-d"></span>
-		</a>
-		.btn-group .btn-icon-bottom
-	</p>
-	<p class="btn-group">
-		<a href="#" class="btn-icon-top">
-			ひだり
-			<span class="icon icon-arrow-u"></span>
-		</a>
-		<a href="#" class="btn-icon-bottom">
-			みぎ
-			<span class="icon icon-arrow-d"></span>
-		</a>
-	</p>
-</div>
-
-<h4>リンクテキスト</h4>
-<div>
-	<p>
-		従来のリンクテキストにするためには .linktext を使います。
-	</p>
-	<p>
-		<a href="#" class="linktext">リンクテキスト形式です</a>
-	</p>
+	<dl>
+		<dt>.btn-group.btn-icon</dt>
+		<dd class="btn-group btn-icon">
+			<a href="#" class="btn">
+				ひだり
+				<span class="icon-star"></span>
+			</a>
+			<a href="#" class="btn">
+				まんなか
+				<span class="icon-star"></span>
+			</a>
+			<a href="#" class="btn">
+				みぎ
+				<span class="icon-star"></span>
+			</a>
+		</dd>
+		<dt>.btn-group.btn-icon-right</dt>
+		<dd class="btn-group btn-icon-right">
+			<a href="#" class="btn">
+				ひだり
+				<span class="icon-star"></span>
+			</a>
+			<a href="#" class="btn">
+				まんなか
+				<span class="icon-star"></span>
+			</a>
+			<a href="#" class="btn">
+				みぎ
+				<span class="icon-star"></span>
+			</a>
+		</dd>
+		<dt>.btn-group.btn-icon-top</dt>
+		<dd class="btn-group btn-icon-top">
+			<a href="#" class="btn">
+				ひだり
+				<span class="icon-star"></span>
+			</a>
+			<a href="#" class="btn">
+				まんなか
+				<span class="icon-star"></span>
+			</a>
+			<a href="#" class="btn">
+				みぎ
+				<span class="icon-star"></span>
+			</a>
+		</dd>
+		<dt>.btn-group.btn-icon-bottom</dt>
+		<dd class="btn-group btn-icon-bottom">
+			<a href="#" class="btn">
+				ひだり
+				<span class="icon-star"></span>
+			</a>
+			<a href="#" class="btn">
+				まんなか
+				<span class="icon-star"></span>
+			</a>
+			<a href="#" class="btn">
+				みぎ
+				<span class="icon-star"></span>
+			</a>
+		</dd>
+		<dt>.btn-group.btn-icon</dt>
+		<dd class="btn-group">
+			<a href="#" class="btn btn-icon-top">
+				ひだり
+				<span class="icon-star"></span>
+			</a>
+			<a href="#" class="btn btn-icon-bottom">
+				みぎ
+				<span class="icon-star"></span>
+			</a>
+		</dd>
+	</dl>
 </div>
 
 <h3>リストビュー</h3>
@@ -318,16 +294,16 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 	</p>
 	<ul class="listview">
 		<li>
-			<a href="#">あいうえお</a>
+			<a href="#" class="btn">あいうえお</a>
 		</li>
 		<li>
-			<a href="#">かきくけこ</a>
+			<a href="#" class="btn">かきくけこ</a>
 		</li>
 		<li>
-			<a href="#">さしすせそ</a>
+			<a href="#" class="btn">さしすせそ</a>
 		</li>
 		<li>
-			<a href="#">たちつてと</a>
+			<a href="#" class="btn">たちつてと</a>
 		</li>
 	</ul>
 </div>
@@ -339,57 +315,29 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 	</p>
 	<ul class="listview btn-icon">
 		<li>
-			<a href="#">
-				右側にアイコン
-				<span class="icon icon-home"></span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				右側にアイコン
-				<span class="icon icon-star"></span>
-			</a>
-		</li>
-	</ul>
-	<ul class="listview btn-icon-left">
-		<li>
-			<a href="#">
+			<a href="#" class="btn">
 				左側にアイコン
-				<span class="icon icon-star"></span>
+				<span class="icon-star"></span>
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="#" class="btn">
 				左側にアイコン
-				<span class="icon icon-gear"></span>
+				<span class="icon-gear"></span>
 			</a>
 		</li>
 	</ul>
-	<ul class="listview btn-icon-top icon-gear">
+	<ul class="listview btn-icon-right">
 		<li>
-			<a href="#">
-				上側にアイコン
-				<span class="icon"></span>
+			<a href="#" class="btn">
+				右側にアイコン
+				<span class="icon-home"></span>
 			</a>
 		</li>
 		<li>
-			<a href="#">
-				上側にアイコン
-				<span class="icon"></span>
-			</a>
-		</li>
-	</ul>
-	<ul class="listview btn-icon-bottom">
-		<li>
-			<a href="#">
-				下側にアイコン
-				<span class="icon icon-check"></span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				下側にアイコン
-				<span class="icon icon-info"></span>
+			<a href="#" class="btn">
+				右側にアイコン
+				<span class="icon-star"></span>
 			</a>
 		</li>
 	</ul>
@@ -401,72 +349,62 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 		グリッドでリンクボタンを並べることができます。
 	</p>
 	<div class="grid grid-2">
-		<a href="#" class="btn-icon-left">
+		<a href="#" class="btn btn-icon">
 			左側にアイコン
-			<span class="icon icon-star"></span>
+			<span class="icon-star"></span>
 		</a>
-		<a href="#" class="btn-icon">
+		<a href="#" class="btn btn-icon-right">
 			右側にアイコン
-			<span class="icon icon-home"></span>
+			<span class="icon-home"></span>
 		</a>
-		<a href="#" class="btn-icon-top">
+		<a href="#" class="btn btn-icon-top">
 			上側にアイコン
-			<span class="icon icon-gear"></span>
+			<span class="icon-gear"></span>
 		</a>
-		<a href="#" class="btn-icon-bottom">
+		<a href="#" class="btn btn-icon-bottom">
 			下側にアイコン
-			<span class="icon icon-check"></span>
+			<span class="icon-check"></span>
 		</a>
 	</div>
 	<p>
 		グリッドは1から5個までのボタンを並べることができます。
 	</p>
 	<div class="grid grid-3">
-		<a href="#">あいうえお</a>
-		<a href="#">かきくけこ</a>
-		<a href="#">さしすせそ</a>
+		<a href="#" class="btn">あいうえお</a>
+		<a href="#" class="btn">かきくけこ</a>
+		<a href="#" class="btn">さしすせそ</a>
 	</div>
 	<br />
 	<div class="grid grid-4">
-		<a href="#">あいうえお</a>
-		<a href="#">かきくけこ</a>
-		<a href="#">さしすせそ</a>
-		<a href="#">たちつてと</a>
+		<a href="#" class="btn">あいうえお</a>
+		<a href="#" class="btn">かきくけこ</a>
+		<a href="#" class="btn">さしすせそ</a>
+		<a href="#" class="btn">たちつてと</a>
 	</div>
 	<br />
 	<div class="grid grid-5">
-		<a href="#">あいうえお</a>
-		<a href="#">かきくけこ</a>
-		<a href="#">さしすせそ</a>
-		<a href="#">たちつてと</a>
-		<a href="#">なにぬねの</a>
+		<a href="#" class="btn">あいうえお</a>
+		<a href="#" class="btn">かきくけこ</a>
+		<a href="#" class="btn">さしすせそ</a>
+		<a href="#" class="btn">たちつてと</a>
+		<a href="#" class="btn">なにぬねの</a>
 	</div>
 	<p>
 		色のオプションを使うことも出来ます。
 	</p>
-	<div class="grid grid-2 primary">
-		<a href="#">おはよう</a>
-		<a href="#">おやすみ</a>
+	<div class="grid grid-2">
+		<a href="#" class="btn btn-primary">おはよう</a>
+		<a href="#" class="btn btn-info">おやすみ</a>
 	</div>
 	<br />
-	<div class="grid grid-2 success">
-		<a href="#">おはよう</a>
-		<a href="#">おやすみ</a>
+	<div class="grid grid-2">
+		<a href="#" class="btn btn-success">おはよう</a>
+		<a href="#" class="btn btn-warning">おやすみ</a>
 	</div>
 	<br />
-	<div class="grid grid-2 info">
-		<a href="#">おはよう</a>
-		<a href="#">おやすみ</a>
-	</div>
-	<br />
-	<div class="grid grid-2 danger">
-		<a href="#">おはよう</a>
-		<a href="#">おやすみ</a>
-	</div>
-	<br />
-	<div class="grid grid-2 menu">
-		<a href="#">おはよう</a>
-		<a href="#">おやすみ</a>
+	<div class="grid grid-2">
+		<a href="#" class="btn btn-danger">おはよう</a>
+		<a href="#" class="btn">おやすみ</a>
 	</div>
 </div>
 
@@ -492,28 +430,15 @@ if (!(_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('And
 	<p class="alert">
 		エラーや完了などのユーザへの通知メッセージに使います
 	</p>
-	<p class="alert primary">.primary のアラートです</p>
-	<p class="alert success">.success のアラートです</p>
-	<p class="alert info">.info のアラートです</p>
-	<p class="alert danger">.danger のアラートです</p>
+	<p class="alert alert-success">.success のアラートです</p>
+	<p class="alert alert-info">.info のアラートです</p>
+	<p class="alert alert-danger">.danger のアラートです</p>
 </div>
 
 <h4>バー</h4>
 <div>
-	<div class="bar">
+	<div class="navbar">
 		<h1>ヘッダ、フッタなどのバー</h1>
-	</div>
-	<div class="bar primary">
-		<h1>.primary のバー</h1>
-	</div>
-	<div class="bar success">
-		<h1>.success のバー</h1>
-	</div>
-	<div class="bar info">
-		<h1>.info のバー</h1>
-	</div>
-	<div class="bar danger">
-		<h1>.danger のバー</h1>
 	</div>
 </div>
 
