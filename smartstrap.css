@@ -2029,7 +2029,7 @@ a.thumbnail:hover {
 	height: 16px;
 	background: #DDD;
 	background: rgba(0,0,0,.15);
-	background-image: url(ui-icons_222222_256x240.png);
+	background-image: url(icons_black.png);
 	background-repeat: no-repeat;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
