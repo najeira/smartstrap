@@ -1953,6 +1953,14 @@ button.btn.small, input[type="submit"].btn.small {
 .grid, .cell-2, .cell-3, .cell-4, .cell-5 { clear: left; }
 .grid-1 a, .grid-2 a, .grid-3 a, .grid-4 a,
 { padding-left: inherit; padding-right: inherit; }
+.grid:before, .grid:after {
+	content: "";
+	display: block;
+}
+.grid:after {
+	clear: both;
+	height: 0;
+}
 .grid {
 	border-bottom: 1px solid #ccc;
 }
