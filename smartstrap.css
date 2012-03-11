@@ -1963,9 +1963,6 @@ button.btn.small, input[type="submit"].btn.small {
 	clear: both;
 	height: 0;
 }
-.grid {
-	border-bottom: 1px solid #ccc;
-}
 .grid .btn {
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -1982,7 +1979,6 @@ button.btn.small, input[type="submit"].btn.small {
 	-moz-border-radius: 0;
 	border-radius: 0;
 	border-right: none;
-	border-bottom: none;
 }
 
 /* Icon */
